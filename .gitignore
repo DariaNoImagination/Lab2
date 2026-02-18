@@ -1,0 +1,14 @@
+
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.cache
+*.vc.db
+*.vc.db-shm
+*.vc.db-wal
+*.vspscc
+*.vssscc
+*.opensdf
+
