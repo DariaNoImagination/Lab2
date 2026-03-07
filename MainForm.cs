@@ -458,7 +458,7 @@ namespace Lab2
                     }
                     else
                     {
-                        // Если позиция не указана, выделяем всю строку
+                       
                         txtBox.SelectionStart = lineStartIndex;
                         txtBox.SelectionLength = lineText.Length;
                         txtBox.ScrollToCaret();
