@@ -352,7 +352,6 @@ namespace Lab2
                 return;
 
            
-                txtBox.HideSelection = false;
               
                 int lineNumber = -1; 
                 int startPos = -1; 
@@ -373,7 +372,7 @@ namespace Lab2
                         else if (startPos == -1)
                             startPos = num;
                         else if (endPos == -1)
-                            endPos = num;
+                            endPos = num+1;
                     }
                 }
 

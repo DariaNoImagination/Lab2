@@ -373,7 +373,7 @@ namespace Lab2
                     previousCharSpace = false;
                     positionInLine++;
                     index++;
-                    continue;
+                    break;
                 }
             }
 
