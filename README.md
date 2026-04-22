@@ -124,7 +124,7 @@ A → aB, где A, B ∈ N (нетерминальные символы), a ∈
 ### Корректные примеры
 
 <p align="center">
-  <img width="1300" height="900" alt="Корректный пример 1" src="https://github.com/user-attachments/assets/d0b1371f-b20d-4a54-af6f-2837b3dc7e16" />
+  <img width="1300" height="800" alt="Корректный пример 1" src="https://github.com/user-attachments/assets/d0b1371f-b20d-4a54-af6f-2837b3dc7e16" />
  
 </p>
 <p align="center">
@@ -132,7 +132,7 @@ A → aB, где A, B ∈ N (нетерминальные символы), a ∈
 </p>
 
 <p align="center">
-<img width="1300" height="900" alt="Корректный пример 2"  src="https://github.com/user-attachments/assets/ea55f55f-4fb3-4091-9851-c97f0c1e04f4" />
+<img width="1300" height="800" alt="Корректный пример 2"  src="https://github.com/user-attachments/assets/ea55f55f-4fb3-4091-9851-c97f0c1e04f4" />
  
 <p align="center">
    <em>Корректный пример 2</em>
@@ -141,12 +141,15 @@ A → aB, где A, B ∈ N (нетерминальные символы), a ∈
 ### Обработка ошибок
 
 <p align="center">
-<img width="1300" height="900" src="https://github.com/user-attachments/assets/5440b5eb-c141-47ed-8479-51505f1f705b" />
+<img width="1300" height="800" src="https://github.com/user-attachments/assets/5440b5eb-c141-47ed-8479-51505f1f705b" />
  
 </p>
+<p align="center">
+<img width="1300" height="800" src="https://github.com/user-attachments/assets/5fc37550-22e9-450e-b3aa-2c6c04d44251" />
 </p>
-
-  
+<p align="center">
+<img width="1300" height="800" src="https://github.com/user-attachments/assets/89f8b4b3-85a3-4126-baf1-3ff3d4293560" />
+</p>
 
 
 
