@@ -76,7 +76,7 @@ struct Point
 ## Диаграмма состояний
 
 <p align="center">
-  <img width="541" height="1081" alt="Диаграмма состояний конечного автомата" src="https://github.com/user-attachments/assets/1ffc6a56-1dbc-45dc-8bc7-13bbfb69577c" />
+  <img width="800" height="1000" alt="Диаграмма состояний конечного автомата" src="https://github.com/user-attachments/assets/1ffc6a56-1dbc-45dc-8bc7-13bbfb69577c" 
 />
 </p>
 
@@ -110,7 +110,7 @@ A → aB, где A, B ∈ N (нетерминальные символы), a ∈
 
 ## Граф автоматной грамматики
 <p align="center">
-  <img width="541" height="1081" alt="Граф автоматной грамматики" src="https://github.com/user-attachments/assets/674c69fc-5377-4698-8e72-2d507947c9fb" />
+  <img width="1600" height="650" alt="Граф автоматной грамматики" src="https://github.com/user-attachments/assets/674c69fc-5377-4698-8e72-2d507947c9fb" 
 />
 </p>
 <p align="center">
@@ -123,25 +123,26 @@ A → aB, где A, B ∈ N (нетерминальные символы), a ∈
 ### Корректные примеры
 
 <p align="center">
-  <img width="1200" height="982" alt="Корректный пример 1" src="https://github.com/user-attachments/assets/d0b1371f-b20d-4a54-af6f-2837b3dc7e16" />
- />
+  <img width="1300" height="900" alt="Корректный пример 1" src="https://github.com/user-attachments/assets/d0b1371f-b20d-4a54-af6f-2837b3dc7e16" />
+ 
 </p>
 <p align="center">
    <em>Корректный пример 1</em>
 </p>
 
 <p align="center">
-<img width="937" height="982" alt="Корректный пример 2"  src="https://github.com/user-attachments/assets/ea55f55f-4fb3-4091-9851-c97f0c1e04f4" />
- />
+<img width="1300" height="900" alt="Корректный пример 2"  src="https://github.com/user-attachments/assets/ea55f55f-4fb3-4091-9851-c97f0c1e04f4" />
+ 
+<p align="center">
+   <em>Корректный пример 2</em>
 </p>
 
 ### Обработка ошибок
 
 <p align="center">
-<img width="1000" height="982" src="https://github.com/user-attachments/assets/5440b5eb-c141-47ed-8479-51505f1f705b" />
- />
+<img width="1300" height="900" src="https://github.com/user-attachments/assets/5440b5eb-c141-47ed-8479-51505f1f705b" />
+ 
 </p>
-
 </p>
 
   
