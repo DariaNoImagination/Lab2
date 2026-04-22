@@ -87,18 +87,18 @@ struct Point
 
 ## Разработка грамматики
     <START> -> struct <ID>
-     <ID> -> _id <OpCurlyBrace>
+     <ID> -> _id <OpCurlyBrace> | id <COMMA> | id <E>
     <OpCurlyBrace> -> { <P> | { <CloseCurlyBrace>
     <P> -> public <TYPE> 
     <TYPE> -> type_id <E> | type_id <COMMA> 
     <E> -> ; <CloseCurlyBrace> | ; <P>
-    <COMMA> -> , <TYPE>
+    <COMMA> -> , <ID>
     <CloseCurlyBrace> -> }; <END>
     <IDENTIFIER> -> letter <IDENTIFIER_REM>
     <IDENTIFIER_REM> -> letter | ε
     ‒ id = <IDENTIFIER>
     ‒ letter -> 'a' | 'b' | ... | 'z' | 'A' | 'B' | ... | 'Z'
-    ‒ type -> ' int' | ' float' | ' string' 
+    ‒ type -> ' int' | ' float' | ' string'
 
 ## Классификация грамматики (по Хомскому)
 
@@ -110,7 +110,8 @@ A → aB, где A, B ∈ N (нетерминальные символы), a ∈
 
 ## Граф автоматной грамматики
 <p align="center">
-  <img width="1600" height="650" alt="Граф автоматной грамматики" src="https://github.com/user-attachments/assets/674c69fc-5377-4698-8e72-2d507947c9fb" 
+  <img width="1600" height="650" alt="Граф автоматной грамматики"  src="https://github.com/user-attachments/assets/39da4e3b-1bdf-46fb-ad72-d81c6903516f" />
+
 />
 </p>
 <p align="center">
