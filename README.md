@@ -86,35 +86,41 @@ struct Point
 </p>
 
 ## Разработка грамматики
-    <START> -> struct <ID>
-     <ID> -> _id <OpCurlyBrace> | id <COMMA> | id <E>
+    <START> -> ‘struct’ <ID>
+    <ID> ->  id <OpCurlyBrace> | id <COMMA> | id <E>
+    <SPACE> ->  id <E> | id <COMMA>
     <OpCurlyBrace> -> { <P> | { <CloseCurlyBrace>
-    <P> -> public <TYPE> 
-    <TYPE> -> type_id <E> | type_id <COMMA> 
+    <P> -> ‘public’ <TYPE> 
+    <TYPE> -> type_ <SPACE> 
     <E> -> ; <CloseCurlyBrace> | ; <P>
     <COMMA> -> , <ID>
-    <CloseCurlyBrace> -> }; <END>
+    <CloseCurlyBrace> -> }; 
     <IDENTIFIER> -> letter <IDENTIFIER_REM>
     <IDENTIFIER_REM> -> letter | ε
-    ‒ id = <IDENTIFIER>
     ‒ letter -> 'a' | 'b' | ... | 'z' | 'A' | 'B' | ... | 'Z'
     ‒ type -> ' int' | ' float' | ' string'
+    -VT = {a, b, ..., z, A, B, ..., Z, ‘struct’, ‘id’, ‘{‘, ‘public’, ‘type’, ‘;’, ‘,’, ‘}’ }
+    -VN = {<START>, <ID>, <SPACE>, <OpCurlyBrace>, <P>, < TYPE>, <E>, < COMMA>, < CloseCurlyBrace>, <IDENTIFIER>, <IDENTIFIER_REM>}.
+
 
 ## Классификация грамматики (по Хомскому)
 
-Грамматика является **автоматной** т.к. каждая правая часть продукции начинается с терминала 
+Грамматика является **автоматной** 
 
-A → a
+Автоматные или регулярные грамматики имеют самые строгие ограничения на форму записи правил:
+A -> aB | a | ε
 
-A → aB, где A, B ∈ N (нетерминальные символы), a ∈ T (терминальные символы)
+где a ∈ VT, A ∈  VN и B ∈ VN
+
+В левой части правил может быть только один нетерминальный символ, а в правой – либо один 
+
+терминальный и один нетерминальный символ, либо один терминальный символ, либо пустая строка
+
 
 ## Граф автоматной грамматики
 <p align="center">
-  <img width="1600" height="650" alt="Граф автоматной грамматики"  src="https://github.com/user-attachments/assets/39da4e3b-1bdf-46fb-ad72-d81c6903516f" />
- <em>Недетерминированный граф автоматной грамматики</em>
-</p>
-<p align="center">
-  <img width="1200" height="700" alt="Граф автоматной грамматики" src="https://github.com/user-attachments/assets/953301ff-2aff-41c0-80a8-c42f1afcd303" /></p>
+  <img width="1200" height="700" alt="Граф автоматной грамматики" src="https://github.com/user-attachments/assets/4f241a2e-dc21-4dc8-bef8-758555c92486" />
+ </p>
 <p align="center">
   <em>Детерминированный граф автоматной грамматики</em>
 </p>
@@ -122,8 +128,9 @@ A → aB, где A, B ∈ N (нетерминальные символы), a ∈
 * `q0` = `<START>`
 * `q1` = `<ID>`
 * `q2` = `<COMMA>`, `<E>`, `<OpCurlyBrace>`
-* `q3`, `q4` = `<P>`, `<CloseCurlyBrace>`
+* `q3 `, `q4` = `<P>`, `<CloseCurlyBrace>`
 * `q5` = `<TYPE>`
+* `q6` = `<SPACE>`
 * `q6` = `<COMMA>`, `<E>`
 * `q7` = `<END>`
 
